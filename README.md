@@ -99,6 +99,13 @@ document.body.style.color = '#94A3B8';
     <p>System 3</p>
     <button id="change-bg-red">Change BG-Color:Red</button>
 
+    
+
+    
+    <br>
+    <br>
+    <p>System 4</p>
+    <button id="change-bg-green">Change BG-Color:Green</button>
 
 
     <script>
@@ -111,6 +118,13 @@ document.body.style.color = '#94A3B8';
         function changeBgLightRed(){
             document.body.style.backgroundColor = 'red'
         }
+
+
+        const greenButton = document.getElementById('change-bg-green');
+        greenButton.onclick = function changeBgLightGreen(){
+            document.body.style.backgroundColor = 'green';
+        }
+
 
     </script>
 

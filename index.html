@@ -35,18 +35,35 @@
     <p>System 3</p>
     <button id="change-bg-red">Change BG-Color:Red</button>
 
+    
+
+    
+    <br>
+    <br>
+    <p>System 4</p>
+    <button id="change-bg-green">Change BG-Color:Green</button>
 
 
     <script>
         function changeBgLightblue(){
-            document.body.style.backgroundColor = 'lightblue'
+            document.body.style.backgroundColor = 'lightblue';
         }
+
+
 
         const redButton = document.getElementById('change-bg-red');
         redButton.onclick =  changeBgLightRed;
         function changeBgLightRed(){
-            document.body.style.backgroundColor = 'red'
+            document.body.style.backgroundColor = 'red';
         }
+
+
+        const greenButton = document.getElementById('change-bg-green');
+        greenButton.onclick = function changeBgLightGreen(){
+            document.body.style.backgroundColor = 'green';
+        }
+
+
 
     </script>
 
