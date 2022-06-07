@@ -116,6 +116,12 @@ document.body.style.color = '#94A3B8';
     <p>System 6</p>
     <button id="change-bg-hotpink">Change BG-Color:Hot Pink</button>
 
+    
+
+    // shortcut 
+    <br>
+    <p>System 7</p>
+    <button id="change-bg-tomato">Change BG-Color:Tomato</button>
 
 
 
@@ -158,6 +164,14 @@ document.body.style.color = '#94A3B8';
         hotPinkButton.addEventListener('click', ()=> {
             document.body.style.backgroundColor = 'hotpink';
         } );
+        
+
+  
+
+
+        document.getElementById('change-bg-tomato').addEventListener('click', ()=> {
+            document.body.style.backgroundColor = 'tomato';
+        })
         
 
 
