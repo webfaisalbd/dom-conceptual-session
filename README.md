@@ -124,6 +124,11 @@ document.body.style.color = '#94A3B8';
         greenButton.onclick = function changeBgLightGreen(){
             document.body.style.backgroundColor = 'green';
         }
+        
+        //  annonymous function
+        //  greenButton.onclick = function (){
+        //     document.body.style.backgroundColor = 'green';
+        //  }
 
 
     </script>
