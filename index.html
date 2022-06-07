@@ -41,12 +41,17 @@
     <p>System 4</p>
     <button id="change-bg-green">Change BG-Color:Green</button>
 
-
+    
 
     <br>
     <p>System 5</p>
     <button id="change-bg-goldenrod">Change BG-Color:Golden Rod</button>
 
+
+
+    <br>
+    <p>System 6</p>
+    <button id="change-bg-hotpink">Change BG-Color:Hot Pink</button>
 
     <script>
         function changeBgLightblue(){
@@ -79,6 +84,12 @@
         }
 
 
+
+        const hotPinkButton = document.getElementById('change-bg-hotpink');
+        hotPinkButton.addEventListener('click', ()=> {
+            document.body.style.backgroundColor = 'hotpink';
+        } );
+        
 
 
     </script>

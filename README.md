@@ -111,6 +111,14 @@ document.body.style.color = '#94A3B8';
     <button id="change-bg-goldenrod">Change BG-Color:Golden Rod</button>
 
 
+
+    <br>
+    <p>System 6</p>
+    <button id="change-bg-hotpink">Change BG-Color:Hot Pink</button>
+
+
+
+
     <script>
         function changeBgLightblue(){
             document.body.style.backgroundColor = 'lightblue'
@@ -141,6 +149,18 @@ document.body.style.color = '#94A3B8';
         function changeBgLightGoldenRod(){
             document.body.style.backgroundColor = 'goldenrod';
         }
+
+
+
+
+
+        const hotPinkButton = document.getElementById('change-bg-hotpink');
+        hotPinkButton.addEventListener('click', ()=> {
+            document.body.style.backgroundColor = 'hotpink';
+        } );
+        
+
+
 
 
     </script>
