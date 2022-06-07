@@ -87,6 +87,23 @@ document.body.style.color = '#94A3B8';
     <button onclick="document.body.style.backgroundColor='yellow'">Change BG-Color</button>
     
     
+    <br>
+    <br>
+    <p>System 2</p>
+    <button onclick="changeBgLightblue()">Change BG-Color:Lightblue</button>
+    
+   
+
+
+
+    <script>
+        function changeBgLightblue(){
+            document.body.style.backgroundColor = 'lightblue'
+        }
+
+       
+
+    </script>
 
     
 ```
