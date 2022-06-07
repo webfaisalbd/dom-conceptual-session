@@ -82,30 +82,33 @@ document.body.style.color = '#94A3B8';
 
 
     <br>
-    <br>
     <p>System 1</p>
     <button onclick="document.body.style.backgroundColor='yellow'">Change BG-Color:Yellow</button>
     
-    
-    <br>
+
     <br>
     <p>System 2</p>
     <button onclick="changeBgLightblue()">Change BG-Color:Lightblue</button>
     
    
-    
-    <br>
+ 
     <br>
     <p>System 3</p>
     <button id="change-bg-red">Change BG-Color:Red</button>
 
     
 
-    
-    <br>
+ 
     <br>
     <p>System 4</p>
     <button id="change-bg-green">Change BG-Color:Green</button>
+
+    
+
+   
+    <br>
+    <p>System 5</p>
+    <button id="change-bg-goldenrod">Change BG-Color:Golden Rod</button>
 
 
     <script>
@@ -124,11 +127,20 @@ document.body.style.color = '#94A3B8';
         greenButton.onclick = function changeBgLightGreen(){
             document.body.style.backgroundColor = 'green';
         }
-        
+
         //  annonymous function
         //  greenButton.onclick = function (){
         //     document.body.style.backgroundColor = 'green';
         //  }
+
+
+
+
+        const goldenRodButton = document.getElementById('change-bg-goldenrod');
+        goldenRodButton.addEventListener('click', changeBgLightGoldenRod);
+        function changeBgLightGoldenRod(){
+            document.body.style.backgroundColor = 'goldenrod';
+        }
 
 
     </script>
