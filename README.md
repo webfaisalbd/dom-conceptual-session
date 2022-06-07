@@ -84,7 +84,7 @@ document.body.style.color = '#94A3B8';
     <br>
     <br>
     <p>System 1</p>
-    <button onclick="document.body.style.backgroundColor='yellow'">Change BG-Color</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">Change BG-Color:Yellow</button>
     
     
     <br>
@@ -93,6 +93,11 @@ document.body.style.color = '#94A3B8';
     <button onclick="changeBgLightblue()">Change BG-Color:Lightblue</button>
     
    
+    
+    <br>
+    <br>
+    <p>System 3</p>
+    <button id="change-bg-red">Change BG-Color:Red</button>
 
 
 
@@ -101,7 +106,11 @@ document.body.style.color = '#94A3B8';
             document.body.style.backgroundColor = 'lightblue'
         }
 
-       
+        const redButton = document.getElementById('change-bg-red');
+        redButton.onclick =  changeBgLightRed;
+        function changeBgLightRed(){
+            document.body.style.backgroundColor = 'red'
+        }
 
     </script>
 
