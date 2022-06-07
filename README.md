@@ -81,7 +81,12 @@ document.body.style.color = '#94A3B8';
     <button onclick="alert('Faisal')">Click Me</button>
 
 
+    <br>
+    <br>
+    <p>System 1</p>
+    <button onclick="document.body.style.backgroundColor='yellow'">Change BG-Color</button>
+    
     
 
-
+    
 ```
