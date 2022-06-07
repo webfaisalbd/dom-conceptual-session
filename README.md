@@ -1,4 +1,4 @@
-# DOM Related Topics
+# `DOM Related Topics`
 
 
 ```javascript
@@ -58,6 +58,30 @@ document.body.style.color = '#94A3B8';
 
 
 
+
+
+```
+
+
+
+
+
+
+
+# `Add onclick handler directly or via javascript`
+
+
+### Add Events Listener
+
+```javascript
+
+
+    <h4>Add Events Listener</h4>
+
+    <button onclick="alert('Faisal')">Click Me</button>
+
+
+    
 
 
 ```
