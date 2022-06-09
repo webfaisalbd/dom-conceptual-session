@@ -15,13 +15,13 @@
 <body>
     <h1 class="text-center mt-2">TO DO LIST</h1>
 
-    <div class="text-center container w-50 m-auto mt-5">
+    <div class="text-center container w-75 m-auto mt-5">
         
         <!-- input field  -->
         <div class="input-group mb-5">
             
-            <input class="form-control" aria-label="With textarea"></input>
-            <button class="input-group-text btn btn-danger">Add Items</button>
+            <input id="input-value" class="form-control" aria-label="With textarea"></input>
+            <button id="add-button" class="input-group-text btn btn-danger">Add Items</button>
         </div>
 
         <!-- table  -->
@@ -34,11 +34,11 @@
                 
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
+            <tbody id="content-container">
+              <tr id="table-content">
+                <!-- <th scope="row">1</th>
                 <td>Mark</td>
-                <td>Button</td>
+                <td>Button</td> -->
                 
               </tr>
               
