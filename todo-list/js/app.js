@@ -24,6 +24,27 @@ document.getElementById('add-button').addEventListener('click', () => {
         document.getElementById('input-value').value = '';
 
 
+
+        const deleteBtn = document.getElementsByClassName('deleteBtn');
+        const doneBtn = document.getElementsByClassName('doneBtn');
+
+        // delete Button 
+        for(const button of deleteBtn){
+            // console.log(button);
+            button.addEventListener('click', (e)=>{
+                e.target.parentNode.parentNode.style.display = 'none';
+            })
+        }
+
+
+     
+
+
+       
+
     }
 })
+
+
+
 
