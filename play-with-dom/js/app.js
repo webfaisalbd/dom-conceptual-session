@@ -41,20 +41,24 @@ const singleButton = document.getElementById('singleButton');
 
 
 let count = 0;
-document.getElementById('plus').addEventListener('click',()=>{
-    count = count+1;
-    document.getElementById('count').innerText = count;
-});
+function plus(e){
+    count++;
+    idFuncton('count');
+};
 
-document.getElementById('minus').addEventListener('click',()=>{
+function minus(e){
     if (count <= 0) {
         document.getElementById('count').innerText = "Negative value is not Allowed"; 
     }
     else {
-        count = count - 1;
-        document.getElementById('count').innerText = count;
+        count--;
+        idFuncton('count');
     }
-})
+}
+
+function idFuncton(id){
+    document.getElementById(id).innerText = count;
+}
 
 
 
