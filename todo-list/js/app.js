@@ -37,7 +37,13 @@ document.getElementById('add-button').addEventListener('click', () => {
         }
 
 
-     
+        // done button 
+        for(const button of doneBtn){
+            // console.log(button);
+            button.addEventListener('click', (e)=>{
+                e.target.parentNode.parentNode.style.textDecoration = 'line-through';
+            })
+        }
 
 
        
