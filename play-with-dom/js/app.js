@@ -21,23 +21,48 @@ const singleButton = document.getElementById('singleButton');
 // }
 
 
-for(const button of allButton){
-    button.addEventListener('click',(e)=>{
-        // console.log(e.target);
-        // console.log(e.target.parentNode);
+// for(const button of allButton){
+//     button.addEventListener('click',(e)=>{
+//         // console.log(e.target);
+//         // console.log(e.target.parentNode);
 
-        if(e.target.id == 'singleButton'){
-           document.getElementById('myTitle').style.color = 'green';
-        }
-        else {
-            document.getElementById('myTitle').style.color = 'red';
-        }
-    })
-}
+//         if(e.target.id == 'singleButton'){
+//            document.getElementById('myTitle').style.color = 'green';
+//         }
+//         else {
+//             document.getElementById('myTitle').style.color = 'red';
+//         }
+//     })
+// }
 
 // event ekta object , jar vitor target thake.
 // event.target 
 // event.target.parentNode
+
+
+let count = 0;
+document.getElementById('plus').addEventListener('click',()=>{
+    count = count+1;
+    document.getElementById('count').innerText = count;
+});
+
+document.getElementById('minus').addEventListener('click',()=>{
+    if (count <= 0) {
+        document.getElementById('count').innerText = "Negative value is not Allowed"; 
+    }
+    else {
+        count = count - 1;
+        document.getElementById('count').innerText = count;
+    }
+})
+
+
+
+
+
+
+
+
 
 
 
