@@ -52,5 +52,8 @@ document.getElementById('add-button').addEventListener('click', () => {
 })
 
 
-
+// const clearAll = document.getElementById('clearAll');
+// clearAll.addEventListener('click',(e)=>{
+//     console.log(e.target.parentNode.parentNode);
+// })
 
