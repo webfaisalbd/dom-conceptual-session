@@ -18,14 +18,29 @@
         <li class="item">Sunt, corrupti?</li>
     </ul>
 
+    <button id="add-item">Add item</button>
+
     <script>
         const items = document.getElementsByClassName('item');
         for(const item of items){
             item.addEventListener('click', function(e){
                 // document.getElementById('item-container').removeChild(item);
-                event.target.parentNode.removeChild(event.target);
+                // event.target.parentNode.removeChild(event.target);
+
             })
         }
+
+
+        document.getElementById('add-item').addEventListener('click',function(){
+            const li = document.createElement('li');
+            li.innerText = "New list";
+            const parent = document.getElementById('item-container');
+            parent.appendChild(li);
+
+        })
+
+
+
     </script>
     
 </body>
