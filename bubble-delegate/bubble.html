@@ -12,8 +12,15 @@
     <section id="section-container">
         <h2>What is Event Bubble</h2>
         <p>Jokhon Onek gula (parent-child) relation er moddhe event add kori like addEventListener(click or others), takhon, jekhane click korsi, sekhan theke capture korte korte tar child porjonto jabe event capture korte. Korar por lowest j child e event pabe, take age trigger korbe, then tar uporer ta, then tar uporer ta. Evabe bud bud er moton, uporer dike uthte thakbe.</p>
+
+
         <h5>Stop bubble propagation</h5>
         <p>propagation k atkanor jonno mane, child e click korle, se uporer dike r jabe na, tar jonno stop propagation use korte hobe. tahole shudu setai trigger korbe.</p>
+
+
+        <h5> stop Immediate Propagation</h5>
+        <p>same id er jokhn ekadik event thake, tokhn sob gulai trigger hoy, tai segula k atkanor jonno sekhane stopImmediatePropagation use korte hoy.</p>
+        <p>------------------</p>
         <ul id="list-container">
             <li class="item">Lorem, ipsum.</li>
             <li id="second-item" class="item">Doloribus, consequatur.</li>
@@ -27,6 +34,17 @@
     
 
     <script>
+        document.getElementById('second-item').addEventListener('click',function(e){
+            console.log(e.target);
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+        })
+
+        document.getElementById('second-item').addEventListener('click',function(e){
+            console.log(e.target);
+            e.stopPropagation();
+        })
+
         document.getElementById('second-item').addEventListener('click',function(e){
             console.log(e.target);
             e.stopPropagation();
